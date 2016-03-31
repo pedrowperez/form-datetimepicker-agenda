@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		
+		
+		</head>
+		<body>
+			<form action="agenda.php" method="POST">
+				<p> Nome </p>
+				<input type="text" id="inputName" name="inputName" required>
+				<p> Email </p>
+				<input type="email" id="inputEmail" name="inputEmail" required>
+				<p> Telefone </p>
+				<input type="tel" id="inputPhone" name="inputPhone" required>
+				<p> Clinica </p>
+				<select name="inputClinica">
+										<option value="Avenida Brigadeiro Faria Lima, 1572, cj. 421 - Pinheiros">Avenida Brigadeiro Faria Lima, 1572, cj. 421 - Pinheiros</option>
+									</select>
+				<p> Mensagem </p>
+				<textarea rows="4" cols="50" name="inputMessage"></textarea>
+				<p> Agenda </p>
+				<input type="datetime" id="inputDatetime" name="inputDatetime" required>
+
+				<input class="somebutton" type="submit" value="ENVIAR">
+			</form>
+		</body>
+			<link rel="stylesheet" type="text/css" href="js/jquery.datetimepicker.css">
+			<script src="js/jquery.js"></script>
+			<script src="js/ajax.js"></script>
+			<script src="js/jquery.datetimepicker.full.min.js"></script>
+			<script src="http://momentjs.com/downloads/moment.min.js"></script>
+			<script> 
+			$.datetimepicker.setLocale('pt-BR');
+			</script>
+			<script>
+			$('#inputDatetime').datetimepicker({
+				formatTime:'H:i',
+				formatDate:'Y/m/d',
+				inline:true,
+					
+				 });		 		
+			</script>
+
+		</html>
+		
+	
