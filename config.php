@@ -19,10 +19,10 @@ if ( ! isset( $_SESSION['logado'] ) ) {
 $_SESSION['login_erro'] = false;
  
 // Variáveis da conexão
-$base_dados  = 'base_dados';
-$usuario_bd  = 'usuario_bd';
-$senha_bd    = 'senha_bd**';
-$host_db     = 'host_db';
+$base_dados  = 'suzitereza';
+$usuario_bd  = 'suzitereza';
+$senha_bd    = 'Dktt8798**';
+$host_db     = '179.188.16.2';
 $charset_db  = 'UTF8';
 $conexao_pdo = null;
 
