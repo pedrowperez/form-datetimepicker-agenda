@@ -13,6 +13,6 @@ $detalhes_pdo .= 'dbname='. $base_dados . ';';
 $detalhes_pdo .= 'charset=' . $charset_db . ';';
 
 $conexao_pdo = new PDO($detalhes_pdo, $usuario_bd, $senha_bd);
-$query = $conexao_pdo->query('SELECT inputDatetime_ag FROM suzitereza.si_agendamento')->fetchAll();
+$query = $conexao_pdo->query('SELECT TIME_FORMAT(`inputDatetime_ag`, '%H:%i') FROM suzitereza.si_agendamento')->fetchAll();
 
 echo json_encode($query);
