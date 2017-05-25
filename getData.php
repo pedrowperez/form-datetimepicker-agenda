@@ -1,10 +1,10 @@
 <?php
 
 // Variáveis da conexão
-$base_dados  = 'suzitereza';
-$usuario_bd  = 'suzitereza';
-$senha_bd    = 'Dktt8798**';
-$host_db     = '179.188.16.2';
+$base_dados  = '####';
+$usuario_bd  = '####';
+$senha_bd    = '#####';
+$host_db     = '######';
 $charset_db  = 'UTF8';
 
 // Concatenação das variáveis para detalhes da classe PDO
